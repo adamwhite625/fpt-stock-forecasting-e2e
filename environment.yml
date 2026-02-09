@@ -1,0 +1,24 @@
+name: fpt-forecast
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - jupyterlab
+  - joblib
+  - pydantic
+  - fastapi
+  - uvicorn
+  - streamlit
+  - optuna
+  - mlflow
+  - tqdm
+  - pip:
+      # PyTorch will be installed separately (GPU version)
+      - neuralforecast
+      - statsmodels
