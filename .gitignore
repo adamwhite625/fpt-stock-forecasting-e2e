@@ -1,7 +1,15 @@
-artifacts/
+# python
 __pycache__/
 *.pyc
-.env
+
+# data & models
+artifacts/
+data/raw/*.csv
+data/processed/
+
+# notebooks
 .ipynb_checkpoints/
-*.pth
-*.pt
+
+# env
+.env
+.env.*
