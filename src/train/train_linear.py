@@ -44,6 +44,6 @@ def run_linear_baseline(
 if __name__ == "__main__":
     run_linear_baseline(
         data_path="data/raw/FPT_train.csv",
-        input_length=30,
-        horizon=5,
+        input_length=120,
+        horizon=100,
     )
