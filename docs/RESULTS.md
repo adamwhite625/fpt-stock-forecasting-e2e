@@ -58,3 +58,25 @@ long-horizon forecasting.
 - Linear models, even with post-processing, are fundamentally limited for
   capturing long-term dependencies in stock price movements.
 - More expressive models are required for reliable long-horizon forecasting.
+
+## PatchTST Results (100 days)
+
+- Input length: 120
+- Horizon: 100
+- MAE: 4.70
+- RMSE: 28.88
+
+Observation:
+PatchTST significantly outperforms linear baselines on long-horizon forecasting.
+The model effectively captures long-term dependencies and prevents error
+accumulation, resulting in stable and accurate forecasts.
+
+## Forecast Visualization
+
+Figure `forecast_comparison.png` shows a qualitative comparison between
+linear baseline and PatchTST forecasts over the first 50 steps of the
+100-day horizon.
+
+Linear forecasts exhibit noticeable drift and fail to follow the underlying
+price dynamics, while PatchTST produces more stable trajectories that better
+align with ground truth trends.
