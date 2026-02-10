@@ -1,15 +1,53 @@
-# python
+# =========================
+# Python
+# =========================
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# data & models
-artifacts/
-data/raw/*.csv
-data/processed/
-
-# notebooks
-.ipynb_checkpoints/
-
-# env
+# =========================
+# Environments
+# =========================
 .env
 .env.*
+.venv/
+venv/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Training logs
+# =========================
+lightning_logs/
+
+# =========================
+# Data
+# =========================
+data/processed/
+
+# allow raw training data
+!data/raw/
+!data/raw/FPT_train.csv
+
+# =========================
+# Artifacts
+# =========================
+# ignore heavy model files
+artifacts/*.pt
+artifacts/*.pth
+artifacts/*.ckpt
+
+# allow images and plots
+!artifacts/*.png
+!artifacts/*.jpg
+!artifacts/*.jpeg
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
